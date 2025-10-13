@@ -1,6 +1,6 @@
-# Table of Squares and Cubes
+print(f"{'number':>5} {'square':>5} {'cube':>5}")
 
-print("Number   Square   Cube")  
-
-for number in range(6): 
-    print(f"{number:<8}{number**2:<8}{number**3}")
+for num in range(0, 6):       
+    square = num * num          
+    cube = square * num
+    print(f"{num:<6}{square:<8}{cube:<10}")

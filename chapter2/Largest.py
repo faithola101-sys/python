@@ -1,14 +1,30 @@
+num = 0
+total = 0
+product = 1
+largest = num
+smallest = num
 
 
-largest = second_largest = float("-inf")
-
-for i in range(10):
+for i in range(4):
     num = int(input(f"Enter number {i+1}: "))
     
+    total += num
+    product *= num
+    
+  
     if num > largest:
-        second_largest = largest
-        largest = num
-    elif num > second_largest:
-        second_largest = num
+       largest = num
+    
+   
+    elif num > smallest:
+         smallest = num
 
-print(f"Largest: {largest}, Second Largest: {second_largest}")
+
+average = total / 4
+
+
+print("Sum:", total)
+print("Product:", product)
+print("Average:", average)
+print("Largest number:", largest)
+print("Smallest number:", smallest)
